@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="bike.css">
+  <title>Shuma Navbar</title>
+</head>
+
+<body>
+
+  <div class="topbar d-none d-md-flex justify-content-between px-3 px-xl-5">
+    <div>
+      <i class="bi bi-geo-alt"></i>
+      1200 Main St. Santa Rosa, CA 93541
+    </div>
+    <div class="d-flex gap-3">
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-youtube"></i>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-xl px-3 px-xl-5">
+    <a class="navbar-brand logo">SHUMA</a>
+    <button class="navbar-toggler menu" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
+      <ul class="navbar-nav gap-xl-4 text-center">
+        <li class="nav-item">
+          <a class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Company</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            Shop
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">Shop Grid</a></li>
+            <li><a class="dropdown-item">Shop List</a></li>
+            <li><a class="dropdown-item">Product Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">About</a></li>
+            <li><a class="dropdown-item">Team</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link">News</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link">Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="d-flex align-items-center gap-3">
+
+      <div class="icon d-none d-md-block">
+        <i class="bi bi-search"></i>
+      </div>
+
+      <div class="cart-btn">
+        $0 <i class="bi bi-bag"></i>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="carousel-section">
+    <div id="carouselExampleDark" class="carousel slide">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active" style="height:450px; position:relative;">
+          <img src="images/cycle1.jpg" class="w-100 h-100" style="object-fit:cover;">
+
+          <div class="carousel-caption d-block text-start">
+            <h5>Ride without limits</h5>
+            <p>High Performance <br>Electric Bicycles</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="height:450px; position:relative;">
+          <img src="images/cycle2.jpeg" class="w-100 h-100" style="object-fit:cover;">
+
+          <div class="carousel-caption d-block text-start">
+            <h5>California's Premier</h5>
+            <p>Electric Bicycle<br>Superstore</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="height:450px; position:relative;">
+          <img src="images/cycle3.jpg" class="w-100 h-100" style="object-fit:cover;">
+
+          <div class="carousel-caption d-block text-start">
+            <h5>Bicycle Servicing</h5>
+            <p>On-Site Skilled<br>Bike Mechanics</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="container my-5">
+
+      <div class="section-title">
+        <small>Featured Bicycles</small>
+        <h1>Our Most<br>Advanced Lineup</h1>
+      </div>
+
+      <div id="bikeCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="row g-4">
+
+              <div class="col-md-3 col">
+                <div class="product-card">
+                  <img
+                    src="https://shuma.progressionstudios.com/wp-content/uploads/2023/06/green-bike-reverse-500x450.jpg">
+                  <div class="text-start">
+                    <h5>Road Streak</h5>
+                    <div class="rating mb-1 text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <p class="price">$4,200</p>
+                    <small>Electric Urban Bike</small>
+                    <div class="features mt-2">
+                      <span>32 mph</span>
+                      <span>45 mi</span>
+                      <span>48V</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-3 col">
+                <div class="product-card">
+                  <img src="	https://shuma.progressionstudios.com/wp-content/uploads/2023/06/bike-image-500x450.jpg">
+                  <div class="text-start">
+                    <h5>Santa Monica</h5>
+                    <div class="rating mb-1 text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <p class="price">$2,200</p>
+                    <small>Cruiser Bike</small>
+                    <div class="features mt-2">
+                      <span>32 mph</span>
+                      <span>45 mi</span>
+                      <span>48V</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-3 col">
+                <div class="product-card">
+                  <img
+                    src="	https://shuma.progressionstudios.com/wp-content/uploads/2023/06/purple-bike-reverse-500x450.jpg">
+                  <div class="text-start">
+                    <h5>Sante Fe</h5>
+                    <div class="rating mb-1 text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <p class="price">$1,900</p>
+                    <small>Electric Urban Bike</small>
+                    <div class="features mt-2">
+                      <span>32 mph</span>
+                      <span>45 mi</span>
+                      <span>48V</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-3 col">
+                <div class="product-card">
+                  <img src="https://shuma.progressionstudios.com/wp-content/uploads/2023/06/reverse-bike-500x450.jpg">
+                  <div class="text-start">
+                    <h5>Star Ride</h5>
+                    <div class="rating mb-1 text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <p class="price">$3,600</p>
+                    <small>Mountain Bike</small>
+                    <div class="features mt-2">
+                      <span>32 mph</span>
+                      <span>45 mi</span>
+                      <span>48V</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <div class="row g-4">
+
+              <div class="col-md-3 col">
+                <div class="product-card">
+                  <img src="https://shuma.progressionstudios.com/wp-content/uploads/2023/06/bike-6-rverse-500x450.jpg">
+                  <div class="text-start">
+                    <h5>Urban Pro</h5>
+                    <div class="rating mb-1 text-warning">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-half"></i>
+                    </div>
+                    <p class="price">$2,800</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-3 col">
+                <div class="product-card">
+                  <img src="	https://shuma.progressionstudios.com/wp-content/uploads/2023/06/revser-white-500x450.jpg">
+                  <h5>Speed X</h5>
+                  <p class="price">$3,200</p>
+                </div>
+              </div>
+
+              <div class="col-md-3 col">
+                <div class="product-card">
+                  <img src="https://shuma.progressionstudios.com/wp-content/uploads/2023/06/bike-position-800x650.jpg">
+                  <h5>Classic Ride</h5>
+                  <div class="rating mb-1 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <p class="price">$1,700</p>
+                </div>
+              </div>
+
+              <div class="col-md-3 col">
+                <div class="product-card">
+                  <img src="https://shuma.progressionstudios.com/wp-content/uploads/2023/06/bike-4-800x650.jpg">
+                  <h5>Trail King</h5>
+                  <div class="rating mb-1 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                  </div>
+                  <p class="price">$2,500</p>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#bikeCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#bikeCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+        </button>
+
+      </div>
+      <div class="text-center mt-4">
+        <button class="btn btn-dark px-4 py-2 rounded-pill">Shop All Bikes →</button>
+      </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="container">
+      <div class="custom-card shadow-lg">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1 class="main-title">We Can Fix It<br>On-Site Skilled<br>Bike Mechanics</h1>
+            <p class="sub-text">
+              Our team of experienced and knowledgeable mechanics are dedicated to keeping your bike in top shape, so
+              you can enjoy the ride without any worries.
+            </p>
+            <a href="#" class="btn-yellow">
+              Schedule an Appointment
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <section class="shop-section py-5">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <h6 class="text-secondary text-uppercase fw-bold small">Parts & Accessories</h6>
+            <h2 class="display-5 fw-bold text-dark mb-4">Shop Gear <br>& Accessories</h2>
+            <p class="text-muted mb-5">See our most popular and top selling picks, find hard to obtain parts and
+              components for all the major brands.</p>
+
+            <div class="category-list">
+              <div class="category-item d-flex align-items-center">
+                <span class="me-3"><i class="bi bi-screwdriver"></i></span> Parts & Components
+              </div>
+              <div class="category-item d-flex align-items-center">
+                <span class="me-3"></span> Helmets & Gear
+              </div>
+              <div class="category-item d-flex align-items-center">
+                <span class="me-3"></span> Apparel
+              </div>
+              <div class="category-item d-flex align-items-center border-bottom-0">
+                <span class="me-3"><i class="bi bi-lightning-charge-fill"></i></span> Accessories
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div class="row g-4">
+              <div class="col-md-6">
+
+                <div class="product-card">
+
+                  <div class="product-img-wrapper">
+                    <span class="badge-sale">SALE!</span>
+                    <span class="badge-new">NEW ARRIVAL</span>
+                    <img src="https://shuma.progressionstudios.com/wp-content/uploads/2023/06/tire-800x650.jpg"
+                      alt="Max Grip Tire" class="img-fluid">
+                  </div>
+                  <h5 class="product-title">Max Grip Tire</h5>
+                  <div class="rating"><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i><span class="text-muted small">(1 Review)</span>
+                  </div>
+                  <div class="price">$55 <span class="text-decoration-line-through text-muted ms-2">$75</span></div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="product-card">
+                  <div class="product-img-wrapper">
+                    <img src="https://shuma.progressionstudios.com/wp-content/uploads/2023/06/saddle-800x650.jpg"
+                      alt="Racing Saddle" class="img-fluid">
+                  </div>
+                  <h5 class="product-title">Racing Saddle</h5>
+                  <div class="rating"><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i><span class="text-muted small">(1 Review)</span>
+                  </div>
+                  <div class="price">$59</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="product-card">
+                  <div class="product-img-wrapper">
+                    <span class="badge-sale">SALE!</span>
+                    <img src="https://shuma.progressionstudios.com/wp-content/uploads/2023/06/helmet-2-800x650.jpg"
+                      alt="Shuma Helmet" class="img-fluid">
+                  </div>
+                  <h5 class="product-title">Shuma Helmet</h5>
+                  <div class="rating"><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i><span class="text-muted small">(1 Review)</span>
+                  </div>
+                  <div class="price">$55 <span class="text-decoration-line-through text-muted ms-2">$75</span></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="product-card">
+                  <div class="product-img-wrapper">
+                    <img src="https://shuma.progressionstudios.com/wp-content/uploads/2023/06/spring-800x650.jpg"
+                      alt="Shuma Rear Shock" class="img-fluid">
+                  </div>
+                  <h5 class="product-title">Shuma Rear Shock</h5>
+                  <div class="rating"><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i><span class="text-muted small">(1 Review)</span>
+                  </div>
+                  <div class="price">$599</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="newsletter">
+      <div class="newsletter-content text-center">
+        <small>Email Newsletter</small>
+        <h1>Stay in the loop</h1>
+        <p>Sign up to be notified of the latest bike releases, news and exclusive promotions delivered right to your
+          inbox.</p>
+
+        <div class="subscribe-box">
+          <input type="email" placeholder="Your email address">
+          <button>Sign up</button>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="features-bar">
+      <div class="row text-center m-0">
+        <div class="col-12 col-md-4">
+          <i class="bi bi-truck"></i> Free Shipping On Orders Over $50
+        </div>
+        <div class="col-12 col-md-4">
+          <i class="bi bi-arrow-repeat"></i> 60 Day Money Back Guarantee
+        </div>
+        <div class="col-12 col-md-4">
+          <i class="bi bi-headset"></i> 24/7 Live Support Team
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="footer">
+      <div class="row m-0">
+
+        <div class="col-12 col-lg-5 footer-left">
+          <div class="logo">SHUMA</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+
+          <div class="social">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+          </div>
+        </div>
+
+        <div class="d-none d-lg-block col-lg-1 divider"></div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <h6>Shop</h6>
+          <a href="#">All Bikes</a>
+          <a href="#">Electric</a>
+          <a href="#">Urban</a>
+          <a href="#">Mountain</a>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2">
+          <h6>Company</h6>
+          <a href="#">About</a>
+          <a href="#">Get Support</a>
+          <a href="#">Latest News</a>
+          <a href="#">My Account</a>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-2">
+          <h6>Contact</h6>
+          <p><i class="bi bi-geo-alt"></i> 1200 Main St, CA</p>
+          <p><i class="bi bi-telephone"></i> +1 123 456 789</p>
+          <p><i class="bi bi-envelope"></i> help@email.com</p>
+          <p><i class="bi bi-clock"></i> Mon - Sun: 8AM - 8PM</p>
+        </div>
+
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      All Rights Reserved. Developed by YourCompanyHere
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
